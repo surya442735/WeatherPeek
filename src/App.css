@@ -1,0 +1,104 @@
+.leetreport-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leetmetric {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  gap: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+}
+.leetmetric:hover {
+  background-color: #eaf7ef;
+}
+.leetmetric h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #28a745;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.stat-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:#333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  font-size: large;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: conic-gradient(
+    #007bff var(--progress, 0%),
+    #e9ecef var(--progress, 0%)
+  );
+}
+.LM-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.LM-form input {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ced4da;
+  opacity: 1;
+
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.LM-form input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
+
+.LM-form button {
+  background-color: #28a745;
+  color: white;
+  opacity: 1;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.LM-form button:hover {
+  background-color: #218838;
+}
